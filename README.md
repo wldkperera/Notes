@@ -48,7 +48,12 @@ If you need to work with multiple languages in notebooks,
 
 **Cross language compatibilty** - tmp tabls allow u to share data between diffrent languages in the same notbook.
 
+# supported languages
 
+Scala
+pySpark
+.Net
+Scala SQL
 
 
 
