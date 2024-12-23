@@ -32,3 +32,58 @@ Azure Databricks is a managed Apache Spark-as-a-Service propriety solution that 
 These services are not mutually exclusive. It is common to find customers who use a combination of these technologies working together.
 
 
+# Magic commands
+
+![image](https://github.com/user-attachments/assets/0ca4c5f0-9034-4f08-b064-9404aa68cb0c)
+
+## Working with Different Languages in Azure Synapse Studio
+
+If you need to work with multiple languages in notebooks,
+
+1. create a temp table using scala
+2. acces the dataframe in PySpark
+3. Use the df in SQL
+
+# Why use temporary table?
+
+**Cross language compatibilty** - tmp tabls allow u to share data between diffrent languages in the same notbook.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
