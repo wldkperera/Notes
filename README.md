@@ -53,7 +53,7 @@ If you need to work with multiple languages in notebooks,
 Scala
 pySpark
 .Net
-Scala SQL
+Spark SQL
 
 
 
