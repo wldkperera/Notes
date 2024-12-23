@@ -1,4 +1,4 @@
-# Notes
+# Azure Synapse
 
 Apache Spark is a parallel processing framework that supports in-memory processing to boost the performance of big data analytics applications. 
 Apache Spark core engine resources are managed by Yarn.
@@ -56,20 +56,28 @@ pySpark
 Spark SQL
 
 
+# Introduction to DataFrames in Spark pools in Azure Synapse Analytics
+
+you can load data into an Apache Spark DataFrame from different file types stored in an Azure Storage Account, or from data stored in a dedicated SQL pool.
+
+If you would like to load data to or from a table into a Spark DataFrame, you can use the Azure Synapse Apache Spark pool to Synapse SQL connector.
+
+The Azure Synapse Apache Spark pool to Synapse SQL connector is a data source implementation for Apache Spark, and it uses Azure Data Lake Storage Generation 2 and PolyBase, and dedicated SQL pools to efficiently transfer data between the Spark cluster and the Azure Synapse dedicated SQL pool instance.
+
+![image](https://github.com/user-attachments/assets/71486a3d-1983-4629-8bd4-e4a535f25006)
 
 
+## common issues that data engineers encounter \
 
+Complex data types are increasingly common and represent a challenge for data engineers because analyzing nested schema and data arrays often include time-consuming and complex SQL queries. It can be difficult to rename or casts the nested column datatype.
 
+Performance issues can also arise when working with deeply nested objects. 
 
+-- SOLUTION
 
+**With Azure Synapse Apache Spark pools it's easy to transform nested structures into columns and array elements into multiple rows**
 
-
-
-
-
-
-
-
+Azure Synapse Apache Spark pools makes it easy for developers to transform nested structures into columns and array elements into multiple rows.
 
 
 
