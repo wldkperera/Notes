@@ -1,5 +1,14 @@
 # Notes
 
+Apache Spark is a parallel processing framework that supports in-memory processing to boost the performance of big data analytics applications. 
+Apache Spark core engine resources are managed by Yarn.
+
+Spark pools in Azure Synapse Analytics are compatible with Azure Storage and Azure Data Lake Generation 2 Storage. 
+
+## Directed acylic graph (DAG)
+nodes are used to read and write data from and to the file system. 
+Spark context also converts applications to a DAG, the graph executes individual tasks within an executor process on the nodes. To manage DAG processes, create an Apache Spark pool in Azure Synapse Analytics.
+
 ![image](https://github.com/user-attachments/assets/e9a480eb-ba99-4388-a81b-94b7e7e78a29)
 
 ## Apache Spark pools in Azure Synapse Analytics:
