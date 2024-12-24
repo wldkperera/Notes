@@ -79,12 +79,18 @@ Performance issues can also arise when working with deeply nested objects.
 
 Azure Synapse Apache Spark pools makes it easy for developers to transform nested structures into columns and array elements into multiple rows.
 
+# Spark and SQL integration
+
+![image](https://github.com/user-attachments/assets/e0fe5358-ed7a-47a1-8c5f-7efa11f3bc9f)
+
+SQL and Apache Spark share the same underlying metadata store to transfer data easily. As a result, when you deploy an Azure Synapse Apache Spark cluster, the Azure Data Lake Generation 2 capability enables you to store Apache Spark SQL tables within it.
+
+**Azure Data Lake Generation 2 capability enables you to store Apache Spark SQL Tables within a cluster**
 
 
+# Integrate SQL and Spark pools in Azure Synapse Analytics
 
-
-
-
+Transferring data between Apache Spark pools and SQL pools can be done using JavaDataBaseConnectivity (JDBC).
 
 
 
