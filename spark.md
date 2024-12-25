@@ -64,7 +64,11 @@ such as GC overhead.
 
 # Automate scaling of Apache Spark pools in Azure Synapse Analytics
 
+![image](https://github.com/user-attachments/assets/4c40f012-3db7-4796-a041-0b42cf95ad50)
 
+## the autoscale functionality will issue a scale request based on the metrics outlined in the table below:
+
+![image](https://github.com/user-attachments/assets/bc9b8ef1-d2ec-4dc0-b225-9ee043eaa997)
 
 
 
