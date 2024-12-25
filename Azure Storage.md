@@ -55,6 +55,48 @@ supports relational and unstructured formats
 **Azure Synapse Analytics supports both SQL Server Authentication and Azure Active Directory**
 
 
+# IoT hub
+
+1. IoT hub is the cloud gateway that connects IoT devices.
+2. Features in Azure IoT hub enrich the relationship between your devices and your back end systems.
+
+
+# Azure event hubs 
+
+1. Azure event hubs provide big data streaming service.
+2. It's designed for high data throughput allowing customers to send billions of requests per day.
+3. event hubs uses a partitioned consumer model to scale out Azure data stream.
+
+# HD Insights
+
+1. low cost cloud solution
+2. supports batch processing, data warehousing, IoT and data S.
+3. includes apache Hive, HBase, Spark and Kafka
+
+**Hadoop stores data in a file system or HDFS, and Spark stores data in memory**
+
+# HBase
+
+1. HBase is a NoSQL database built on Hadoop.
+2. It's commonly used for search engines.
+3. HBase offers automatic failover
+
+
+# Kafka
+
+!. Kafka is an open source platform that's used to compose data pipelines.
+2. It offers message queue functionality which allows users to publish or subscribe to real-time data streams.
+
+# Storm
+
+1. Storm is a distributed real-time streamlining analytic solution.
+2. It supports common programming languages like Java, C-sharp and Python. 
+
+
+
+
+
+
 
 
 
