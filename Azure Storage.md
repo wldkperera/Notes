@@ -200,6 +200,8 @@ To work with data in a storage account, your app will need two pieces of data; 1
 
 
 
+# **Azure storage security features**
+
 
 
 
