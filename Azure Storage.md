@@ -179,12 +179,24 @@ Azure storage provides a Rest API to work with the containers and data stored in
 1. Client libraries can save a significant amount of work for app developers because the API is tested, and it often provides nicer wrappers around the data model sent and received by the Rest API.\
 2. .Net, Java, Python, Node.js, and Go can used
 
+## connect to azure storage account
 
+To work with data in a storage account, your app will need two pieces of data; 1. access key and 
+                                                                               2. REST API endpoint.
 
+**Access keys are the easiest approach to authenticating access to a storage account**
 
+**Storage accounts offer a separate authentication mechanism called shared access signatures that support exploration and limited permissions for scenarios where you need to grant limited access**
 
+# When Regenerating Access keys, The proper sequence to prevent downtime is 
 
+1. Update the connection strings in your application code to reference the secondary access key of the storage account.
 
+2. Regenerate the primary access key for your storage account using the Azure portal or command line tool.
+
+3. Update the connection strings in your code to reference the new primary access key.
+
+4. Finally, regenerate the secondary access key in the same manner.
 
 
 
