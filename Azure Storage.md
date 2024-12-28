@@ -165,6 +165,37 @@ supports relational and unstructured formats
 
 **Single subscriptiopn can hold 200 storage account, each can have 500 TB data.**
 
+# **Storagee APIs**
+
+Azure storage provides a Rest API to work with the containers and data stored in each account. There are independent APIs available to work with each type of data you can store.
+
+1. Blobs
+2. Queues
+3. Tables
+4. Files
+
+# client library
+
+1. Client libraries can save a significant amount of work for app developers because the API is tested, and it often provides nicer wrappers around the data model sent and received by the Rest API.\
+2. .Net, Java, Python, Node.js, and Go can used
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
