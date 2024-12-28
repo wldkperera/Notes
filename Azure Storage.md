@@ -4,10 +4,79 @@ Azure offers 4 scalable objects
 3. Azure queue - message store for reliable messaging between application components
 4. Azure tables - no schema storag for structured data
 
-# Blob
+# 1. Blob
 
 cheep, images, 
 REST API, many languages
+
+Blob storage is ideal for serving images or documents directly to a browser, including full static websites, storing files for distributed access, streaming video and audio, storing data for backup and restoration.
+
+# Types of Blobs
+
+1. ### Block Blobs
+   texts, binary files up to 5TB, 50000 blocks of 100 MB in size. media files or image files for websites.
+   files larger than 100 megabytes must be uploaded a small blocks. These blocks are then consolidated or committed into the final blob. 
+
+   
+3. ### Page blobs
+   hold random access files up to 8 TB
+   used primarily as the backing storage for the virtual hard disks or VHDs used to provide durable discs for Azure virtual machines or Azure VMs.
+   provide random read write access to 512-byte pages.
+   
+   
+5. ### Append blobs
+   made up of blobs like block blobs, but optimized in appeand operation.
+   frequently used for logging information from one or more sources into the same blob
+   A single append blob can be up to 195 gigabyte.
+   
+   eg:  write all your trace logging to the same append blob for an application running on multiple VMs.
+   
+
+# 2. Azure Files
+
+1. enables you to set up highly available network file shares that can be accessed using the standard server message block or SMB protocol. This means that multiple VMs can share the same files with both read and write access.
+2. You can also read the files using the REST interface and the storage client libraries.
+3. Finally, you can also associate a unique URL to any file to allow fine grained access to a private file for a set period.
+4. File shares can be used for many common scenarios, storing shared configuration files for VMs, tools or utilities so that everyone is using the same version. 
+
+## Use cases
+
+1. storing shared configuration files for VMs, tools or utilities so that everyone is using the same version.
+2. Log files such as diagnostics, metrics and crash dumps and shared data between on premises applications and Azure VMs to allow migration of apps to the cloud over a period.
+
+# Azure Queue - store and retrieve messages
+
+1. Queue messages can be up to 64 kilobytes in size and a queue can contain millions of messages.
+2. Finally, queue are used to store lists of messages to be processed asynchronously.
+3. You can use queue to loosely connect different parts of your application together.
+
+### eg: we could perform image processing on the photos uploaded by our users. Perhaps we want to provide some sort of face detection or tagging capability so people can search through all the images they have stored in our service. And we could use queues to pass messages to our image processing service to let it know that new images have been uploaded and are ready for processing.
+
+## Storage types
+
+1. ### Standard General Purpose v2 - blobs, file shares, queues and tables, it is recommended from most scenarios using Azure storage.
+2. ### premium blok blobs - block blobs and a pen blobs.
+   recommended for scenarios with high transaction rates, scenarios that use smaller objects or those that require consistently low storage latency.
+4. ### Premium files shares account -  file shares only.
+   It is recommended for enterprise or high performance scale applications. This is useful if you require both SMB and NFS, file share support.
+5. ### Premium page blobs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Data lake
 
@@ -93,6 +162,8 @@ supports relational and unstructured formats
 2. It supports common programming languages like Java, C-sharp and Python. 
 
 
+
+**Single subscriptiopn can hold 200 storage account, each can have 500 TB data.**
 
 
 
