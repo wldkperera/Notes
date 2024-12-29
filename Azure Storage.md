@@ -202,15 +202,74 @@ To work with data in a storage account, your app will need two pieces of data; 1
 
 # **Azure storage security features**
 
+all the data in azure storage enncrypted using 256-bit cypher and decrypt happening automatically.
+
+**CORS support** is an optional flag you can enable on storage accounts. The flag as the appropriate headers when you use http get requests to retrieve resources from the storage account. 
+
+### RBAC or role based access control
+
+1. most flexible principle
+2. RBAC roles that are scoped to a subscription, a resource group, a storage account and an individual container or queue. 
+
+**You can use Active Directory to authorize resource management operations, such as configuration.**
+**Active Directory is supported for data operations on Blob and Queue storage.**
+
+### Auditing
+
+1. Auditing is another part of controlling access.
+2. You can audit Azure storage access by using the built in storage analytics service.
+3. Storage analytics, logs every operation in real time. And you can search the storage analytics logs for specific requests.
+
+**Microsoft Azure Storage accounts can create authorized apps in Active Directory to control access to the data in blobs and queues. For other storage models, clients can use a shared key, or shared secret.**
+
+## threat protection and learn how to control network access
+
+untrusted clients - used Shared Access Signaturee (SAS)
+
+1. service level SAS - allow access to specific resources in a storage account and retrieve a list of files in a file system or to download a file.
+2. account level SAS - allow access to anything that a service level SAS can allow plus additional resources and abilities
+
+Accounts that store user data have to typical designs, a 
+1. front-end proxy service - upload and download data through a front end proxy service which performs authentication
+2. lightweight or SAS provider service - authenticates the client as needed, access dirctly via genrated SAS
+
+## Advanced threat protection
+
+1. Security alerts are triggered when anomalies in activity occur
+2. securuity defernder should enable
+   
+available for Azure Data Lake Storage Gen 2, Blob Storage, File storage  
+
+![image](https://github.com/user-attachments/assets/9eb423bd-331d-404b-a0e4-bb4467d3552e)
 
 
 
+# **Blob Storage** - Binary large objects
 
+1. Blobs give you file storage in the cloud and an API that lets you build apps to access the data
+2. Blobs are files for the Cloud
+3. is unstructured
+4. Blob could contain gigabytes of binary data streamed from a scientific instrument, an encrypted message for another application, or data in a custom format for an app you're developing
+5. not appropriate for structured data that needs to be queried frequently
+6. They have higher latency than memory and local disk and don't have the indexing features that make databases efficient at running queries.
+7. Ideal for storing up to 8 TB data for VMs, storing data for analysis by an On-premises or Azure hosting service, storing data for backup and restore disaster recovery and archiving, Streaming video and audio, storing files for distributed access, and serving images or documents directly to a browser
+8. Blob Storage does not provide any mechanism for searching or sorting Blobs by metadata.
+9. The Blob Storage API is REST-based and supported by client libraries in many popular languages
 
+### Block blobs
 
+best choice, fast download and uploads
+![image](https://github.com/user-attachments/assets/f459d804-723a-401c-9a1b-31be786e61c7)
 
+### append blobs
 
+![image](https://github.com/user-attachments/assets/20124f31-4d29-4b2c-94f8-7b0b1ec8d07e)
 
+### Page blobs
+
+![image](https://github.com/user-attachments/assets/8e88911f-23a1-4c07-a3d2-3f3b1cd8c97f)
+
+**Every blob lives inside a blob container. You can store an unlimited number of blobs in a container and an unlimited number of containers in a storage account.**
 
 
 
