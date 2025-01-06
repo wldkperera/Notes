@@ -183,4 +183,54 @@ The table includes a column for the current value of a member plus either the or
 
 
 
+# Control Flow
+
+orchestrating data movement and transforming data at scale
+
+1. control flow is an orchestration of pipeline activities.
+2. That orchestration includes chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on demand or from a trigger.
+3. Control flow can also include looping containers that can pass information for each iteration of the looping container. 
+
+branching activity - if statement
+
+# ADF Triggers
+
+1. Schedule - invokes a pipeline on a wall clock shcedule
+2. Tumbling window - trigger that operates on a periodic interval while also retaining state.
+3. Event based - trigger rhat rspond to an event
+   
+# Activitiees in ADF
+
+1. data movment - from source >> destination
+2. Data transformation - Spark, flows, azure functions that can be added to pipelines individually or chained with anothr activity
+3. Control - activity depndncy defines how subsquent activity dpnds on previous activity
+
+# Depndeciews
+
+1. succeed
+2. skipped
+3. failed
+4. compleetion
+
+0113664130
+
+# ADF connectors that can parameterize
+
+![image](https://github.com/user-attachments/assets/baed432b-3694-4919-9f20-a431c9bdb1e4)
+
+**When u integratee global parameteers in pipeline using CI/CD with ADF:**
+1. Includ global parameters in ARM templatee - **benificial** 
+2. Deploy global parameeters via a power shell script 
+
+
+# Azure Synapse
+
+## Integrate a Notebook within Azure Synapse Pipelines
+
+https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/jP5MF/exercise-integrate-a-notebook-within-azure-synapse-pipelines
+
+
+1. Azure Data factory enables you to execute packages for SSIS
+2. with ADF, you can provision SSIS, Integration Runtime, IR.
+
 
