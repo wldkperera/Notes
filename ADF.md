@@ -120,7 +120,35 @@ Transformations available in the mapping data flows
 ![image](https://github.com/user-attachments/assets/b8918e22-a48f-44b3-8721-c4e634bd2f17)
 ![image](https://github.com/user-attachments/assets/c0ad0b96-d0e1-469c-b143-4f63819aa766)
 
+# data Flow Expression Builder
 
+customize the functionality of a transformation using columns, fields, variables, parameters, functions from your data flow in these boxes.
+
+
+# Data Flow
+
+data flows will run on your own execution cluster for scaled-out data processing
+Debug mode = interactive spark cluster
+
+## Note
+
+1. If your dataset is pointing at a folder with other files and you only want to use one file, you may need to create another dataset or utilize parameterization to make sure only a specific file is read
+2. If the schema in ADLS haven't imported yet, dataset >> schema >> import schema
+
+### following datasets can be used in a source transformation
+
+1. Azure Blob Storage (JSON, Avro, Text, Parquet)
+2. Azure Data Lake Storage Gen1 (JSON, Avro, Text, Parquet)
+3. Azure Data Lake Storage Gen2 (JSON, Avro, Text, Parquet)
+4. Azure Synapse Analytics
+5. Azure SQL Database
+6. Azure CosmosDB
+
+** Integration runtime has 8 cores in it.**
+
+# How Integrate SQL server integration services packages within Azure Data Factory
+
+https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/2VK3A/integrate-sql-server-integration-services-packages-within-azure-data-factory
 
 
 
