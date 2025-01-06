@@ -151,17 +151,35 @@ Debug mode = interactive spark cluster
 https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/2VK3A/integrate-sql-server-integration-services-packages-within-azure-data-factory
 
 
+## ADF can also call on compute resources to transform data by a data platform service that may be better suited to the job.
+
+![image](https://github.com/user-attachments/assets/92d084bb-00c2-4d44-93fc-2df6c513db64)
 
 
 
 
+Slowly Changing Dimensions - SCD
 
+SCD - tables in a dimensional model that handle changs to dimension values over time.
 
+mapping data flow, that can incrementally update a slowly changing dimension table in a dedicated SQL pool
 
+SCD is applies when the values of a business entity change over time and not on a set schedule. 
 
+The most common are type 1 and type 2.
 
+1. Type 1 - always show the latest values. when changes in source data are detected, the dimension table data is overwritten. automatically linked to updateed row.
 
+2. Type 2 - supports versioning of dimension members. Often the source system doesn't store versions, so the data warehouse load, process, detects, and manages changes in a dimension table. 
 
+when a change happen in type 2 member, create a new row with appropiate startdate and endDate. 
+
+use a surrogate key to provide a unique reference to a version of the dimension member.
+
+3. Type 3 - SCD supports storing two versions of a dimension member as separate columns. use additional column.
+The table includes a column for the current value of a member plus either the original or previous value of the member. So, Type 3 uses additional columns to track one key instance of history, rather than storing additional rows to track each change like in a Type 2 SCD.
+
+4. Type 6 - combination of 1, 2,3. design you also store the current value in all versions of that entity so you can easily report on the current value or the historical value.
 
 
 
