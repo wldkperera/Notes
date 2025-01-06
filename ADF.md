@@ -233,4 +233,33 @@ https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/jP
 1. Azure Data factory enables you to execute packages for SSIS
 2. with ADF, you can provision SSIS, Integration Runtime, IR.
 
+### Connect to a Git repository
+
+https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/wlUKA/connect-to-a-git-repository
+
+
+### CI/ CD
+
+https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/4DDjW/continuous-integration-and-deployment
+
+
+### Monitor Azure Data Factory pipelines
+
+https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/SQ5hF/monitor-azure-data-factory-pipelines
+
+
+### Set up alerts for Azure Data Factory
+
+https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/P9KuU/set-up-alerts-for-azure-data-factory
+
+
+
+
+
+
+
+
+
+
+
 
