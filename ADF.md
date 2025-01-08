@@ -212,7 +212,6 @@ branching activity - if statement
 3. failed
 4. compleetion
 
-0113664130
 
 # ADF connectors that can parameterize
 
@@ -226,7 +225,6 @@ branching activity - if statement
 # Azure Synapse
 
 ## Integrate a Notebook within Azure Synapse Pipelines
-
 https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/jP5MF/exercise-integrate-a-notebook-within-azure-synapse-pipelines
 
 
@@ -261,5 +259,32 @@ https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/P9
 
 
 
+
+
+# Git and ADF
+
+for version controling
+![image](https://github.com/user-attachments/assets/dacb2060-d23c-4797-9cac-6210522f4568)
+
+1. ability to track and audit changes 
+2. ability to revert changes that introduced bugs.
+
+
+## Share and receive data using Azure Data Share and transform data using Azure Data Factory
+https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/YZ88l/exercise-share-and-receive-data-using-azure-data-share-and-transform-data-using
+
+
+**Mapping flow can used to combine two tabbles**
+
+
+## How to Sink dataset into Azure Synapse Analytics with Azure Data Factory
+https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/QFnQj/exercise-sink-dataset-into-azure-synapse-analytics-with-azure-data-factory
+
+
+**Monitor tab stores run informations of pipeline for 45 days by default**
+
+
+Data professionals - ETL
+dveelopers - ELT
 
 
