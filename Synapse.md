@@ -63,6 +63,12 @@ Parameters are key value pairs of read-only configuration.
 
 The arguments for the defined parameters are passed during execution from the run context that was created by a trigger or a pipeline that was executed manually. Finally, activities within the pipeline consumed the parameter values.
 
+# Synapse Link
+
+Azure Synapse Link for Azure Cosmos DB is a cloud-native hybrid transactional and analytical processing (HTAP) capability. 
+
+It enables you to run near real-time analytics over operational data in Azure Cosmos DB without impacting the performance of transactional workloads on Azure Cosmos DB.
+
 
 **Understand hybrid transactional analytical processing with Azure Synapse Link**
 
@@ -71,7 +77,7 @@ Hybrid Transactional and Analytical Processing (HTAP) allows businesses to condu
 With Azure Synapse Link enabled, and the analytical store provision, you are then able to query the analytical store directly from Azure Synapse Analytics, or create a pipeline to copy the contents of the analytical store.
 
 
-
+**Data Warehousing** - The goal of data warehousing is to create a database of historical data that can be retrieved and analyzed to provide useful insight into the organization's operations.
 
 
 
