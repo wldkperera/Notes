@@ -54,6 +54,10 @@ multiple activities can be logically grouped together with an object referred to
 Control flow is an orchestration of pipeline activities that include cheating activities in a sequence, branching and defining parameters at a pipeline level, and passing arguments while invoking the pipeline on-demand or from a trigger.
 
 
+**Built in pool** - best used when you need predictable performance and cost.
+**Dedicatd pool** - ideal for unplanned or ad hoc workloads that the diagnostic analytics approach would generate. It works best when performing data exploration or preparing data for data virtualization.
+
+
 ### paramters
 
 ![image](https://github.com/user-attachments/assets/cd866c88-8b16-42f1-a8b3-363b61341e3e)
@@ -80,7 +84,9 @@ With Azure Synapse Link enabled, and the analytical store provision, you are the
 **Data Warehousing** - The goal of data warehousing is to create a database of historical data that can be retrieved and analyzed to provide useful insight into the organization's operations.
 
 
+Data in a data warehouse is stored in permanent tables that are populated using an extract, transform, and load (ETL) process by services such as Azure Synapse pipelines, or Azure Data Factory. 
 
+As a result, you need to understand the data that is stored in the sources systems and how it should arrive within the data warehouse. This in turn dictates how you should cleanse or transform the data.
 
 
 
