@@ -130,6 +130,18 @@ customize the functionality of a transformation using columns, fields, variables
 data flows will run on your own execution cluster for scaled-out data processing
 Debug mode = interactive spark cluster
 
+
+### Data flow transformation
+
+1. Select transformation to rename and drop a column
+2. Filter Transformation to filter out unwanted years
+3. Derive Transformation to calculate primary genre
+4. Rank via a Window Transformation
+5. Aggregate ratings with an Aggregate Transformation
+6. Specify Upsert condition via an Alter Row Transformation - specify insert, delete, update, upsert
+
+
+
 ## Note
 
 1. If your dataset is pointing at a folder with other files and you only want to use one file, you may need to create another dataset or utilize parameterization to make sure only a specific file is read
@@ -249,15 +261,6 @@ https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/SQ
 ### Set up alerts for Azure Data Factory
 
 https://www.coursera.org/learn/azure-data-factory-data-integration/supplement/P9KuU/set-up-alerts-for-azure-data-factory
-
-
-
-
-
-
-
-
-
 
 
 
